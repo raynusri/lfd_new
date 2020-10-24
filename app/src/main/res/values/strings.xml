@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">lfd</string>
     <string name="signup">Don"'"t have an account yet?\nRegister for free now!</string>
+    <string name="policy">I agree to let Little Fat Duck to collect my details.\nClick here to view</string>
+    <string name="join">"Join our membership for\nFREE today!</string>
 </resources>
