@@ -1,10 +1,8 @@
 package com.example.lfd;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -16,8 +14,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
@@ -34,11 +30,11 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         mEmail=findViewById(R.id.Email);
-        mPassword=findViewById(R.id.password);
+        mPassword=findViewById(R.id.Password);
         progressBar=findViewById(R.id.progressBar);
         fAuth=FirebaseAuth.getInstance();
-        mLoginBtn=findViewById(R.id.loginBtn);
-        mCreateBtn=findViewById(R.id.createText);
+        mLoginBtn=findViewById(R.id.LoginBtn);
+        mCreateBtn=findViewById(R.id.CreateText);
         forgotTextLink=findViewById(R.id.forgotPassword);
 
         mLoginBtn.setOnClickListener(new View.OnClickListener(){
