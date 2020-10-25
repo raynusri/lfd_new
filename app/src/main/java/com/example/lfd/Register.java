@@ -26,7 +26,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 
 
 public class Register extends AppCompatActivity {
-    public static final String TAG = "Register";
+    public static final String TAG = "TAG";
     EditText mFullName,mEmail,mPassword,mPhone,mdob;
     Button mRegisterBtn;
     TextView mLoginBtn,policy;
