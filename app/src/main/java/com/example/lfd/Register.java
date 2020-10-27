@@ -44,7 +44,7 @@ CheckBox agree;
         mEmail = findViewById(R.id.Email);
         mPassword = findViewById(R.id.Password);
         mPhone = findViewById(R.id.phone);
-        mdob = findViewById(R.id.dob);
+        mdob = findViewById(R.id.labelDob);
 
         mRegisterBtn = findViewById(R.id.registerBtn);
         mLoginBtn = findViewById(R.id.CreateText);
