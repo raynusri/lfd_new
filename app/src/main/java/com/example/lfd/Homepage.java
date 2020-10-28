@@ -32,11 +32,11 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
-//        VideoView videoView = findViewById(R.id.videoView3);
-//        videoView.setVideoPath("android.resource://"+getPackageName()+"/"+R.raw.LittleFatDuck);
-//        MediaController mediaController = new MediaController(this);
-//        mediaController.setAnchorView(videoView);
-//        videoView.setMediaController(mediaController);
+        VideoView videoView = findViewById(R.id.videoView3);
+        videoView.setVideoPath("android.resource://"+getPackageName()+"/"+R.raw.lfd);
+        MediaController mediaController = new MediaController(this);
+        mediaController.setAnchorView(videoView);
+        videoView.setMediaController(mediaController);
 
     }
 
@@ -48,7 +48,6 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
                 break;
             case R.id.nav_menu:
                 startActivity(new Intent(getApplicationContext(), Menu.class));
-
                 break;
             case R.id.nav_outlet:
                 startActivity(new Intent(getApplicationContext(), Outlet.class));
