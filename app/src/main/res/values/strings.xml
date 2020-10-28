@@ -3,4 +3,6 @@
     <string name="signup">Don"'"t have an account yet?\nRegister for free now!</string>
     <string name="policy">I agree to let Little Fat Duck to collect my details.\nClick here to view</string>
     <string name="join">"Join our membership for\nFREE today!</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
 </resources>

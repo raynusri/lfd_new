@@ -56,7 +56,7 @@ policy=findViewById(R.id.policy);
         progressBar = findViewById(R.id.progressBar);
 
         if(fAuth.getCurrentUser()!=null){
-            startActivity(new Intent(getApplicationContext(),MainActivity.class));
+            startActivity(new Intent(getApplicationContext(), Homepage.class));
 finish();
         }
         mRegisterBtn.setOnClickListener(new View.OnClickListener(){
@@ -108,7 +108,7 @@ documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
 Log.d(TAG,"OnSuccess:user Profile Created "+userID);
     }
 });
-startActivity(new Intent(getApplicationContext(), MainActivity.class));
+startActivity(new Intent(getApplicationContext(), MyProfile.class));
                         } else {
                             Toast.makeText(Register.this, "Error!" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                             progressBar.setVisibility(View.GONE);

@@ -72,7 +72,7 @@ public void onClick(View V){
                 @Override
                 public void onSuccess(Void aVoid) {
                     Toast.makeText(EditProfile.this,"Profile Updated",Toast.LENGTH_SHORT).show();
-                    startActivity(new Intent(getApplicationContext(),MainActivity.class));
+                    startActivity(new Intent(getApplicationContext(), MyProfile.class));
                     finish();
                 }
             });
@@ -97,11 +97,17 @@ Log.d(TAG,"onCreate:" +fullName+" "+email+" "+phone+" "+dob);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i=new Intent(v.getContext(),MainActivity.class);
+                Intent i=new Intent(v.getContext(), MyProfile.class);
                 startActivity(i);
             }
         });
 
+
+    }
+    public void logout(View view){
+        FirebaseAuth.getInstance().signOut();//logout
+        startActivity(new Intent(getApplicationContext(),Login.class));
+        finish();
     }
 
 }
