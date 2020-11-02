@@ -17,15 +17,16 @@
         <activity android:name=".EditProfile" />
         <activity android:name=".PdfRender" />
         <activity android:name=".ResetPassword" />
-        <activity android:name=".Login" />
-        <activity android:name=".Register">
+        <activity android:name=".MyProfile" />
+        <activity android:name=".Register"/>
+
+        <activity android:name=".Login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MyProfile" />
 
         <meta-data
             android:name="preloaded_fonts"

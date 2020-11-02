@@ -1,8 +1,9 @@
 <resources>
-    <string name="app_name">lfd</string>
-    <string name="signup">Don"'"t have an account yet?\nRegister for free now!</string>
-    <string name="policy">I agree to let Little Fat Duck to collect my details.\nClick here to view</string>
-    <string name="join">"Join our membership for\nFREE today!</string>
+    <string name="app_name">Little Fat Duck</string>
+    <string name="signup">Do not have an account yet? Register for free now!</string>
+    <string name="policy">By providing my personal data, I hereby declare that I have read, understood and agreed to the terms as provided via this link:</string>
+    <string name="join">Join our membership for FREE today!</string>
+    <string name="resetpassword">No worries! Enter your email and we will send you a link to reset your password.</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 </resources>

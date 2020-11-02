@@ -53,7 +53,7 @@ public class Login extends AppCompatActivity {
                     return;
                 }
                 if(password.length()<6){
-                    mPassword.setError("password must be more than 6 characters");
+                    mPassword.setError("Password must be more than 6 characters");
                     return;
                 }
                 progressBar.setVisibility(View.VISIBLE);

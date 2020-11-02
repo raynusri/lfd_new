@@ -43,7 +43,7 @@ public class ResetPassword extends AppCompatActivity {
                 fAuth.sendPasswordResetEmail(mail).addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void aVoid) {
-                        Toast.makeText(ResetPassword.this, "Reset Link is Sent to ur email.", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ResetPassword.this, "Reset link is sent to your email.", Toast.LENGTH_SHORT).show();
                     }
                 }).addOnFailureListener(new OnFailureListener() {
 

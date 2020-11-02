@@ -34,8 +34,6 @@ String userId;
 ImageView profileImage;
 Button changeProfileImage;
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,7 +46,7 @@ Button changeProfileImage;
         fStore=FirebaseFirestore.getInstance();
         userId=fAuth.getCurrentUser().getUid();
         profileImage=findViewById(R.id.profileImage);
-changeProfileImage=findViewById(R.id.changeProfile);
+        changeProfileImage=findViewById(R.id.changeProfile);
 
 
         DocumentReference documentReference=fStore.collection("users").document(userId);
@@ -83,11 +81,6 @@ startActivity(i);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
     }
-    public void logout(View view){
-        FirebaseAuth.getInstance().signOut();//logout
-        startActivity(new Intent(getApplicationContext(),Login.class));
-        finish();
-    }
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -97,7 +90,6 @@ startActivity(i);
                 break;
             case R.id.nav_menu:
                 startActivity(new Intent(getApplicationContext(), Menu.class));
-
                 break;
             case R.id.nav_outlet:
                 startActivity(new Intent(getApplicationContext(), Outlet.class));
