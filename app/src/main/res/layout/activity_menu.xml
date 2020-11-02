@@ -9,10 +9,15 @@ android:layout_height="match_parent"
 android:fitsSystemWindows="true"
 tools:context=".Menu">
 
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
      <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#white">
+        android:background="#white"
+         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -106,6 +111,7 @@ tools:context=".Menu">
         tools:layout_editor_absoluteX="4dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 <com.google.android.material.navigation.NavigationView
     android:id="@+id/nav_view"
     android:background="@color/lightgray"
