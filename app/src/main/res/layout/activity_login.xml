@@ -6,22 +6,53 @@
     android:layout_height="match_parent"
     tools:context=".Login">
 
+    <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="414dp"
+            android:layout_height="60dp"
+            android:background="@color/black"
+            android:fadeScrollbars="false"
+            android:maxWidth="1dp"
+            android:theme="?attr/actionBarTheme"
+            app:buttonGravity="top|center_vertical"
+            app:contentInsetStartWithNavigation="20dp"
+            app:layout_constrainedHeight="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:maxButtonHeight="8dp"
+            app:navigationContentDescription="" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="Login"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar" />
+
+
     <ImageView
         android:id="@+id/LoginLogo"
         android:layout_width="170dp"
         android:layout_height="170dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="50dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.456"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
         app:srcCompat="@drawable/lfd" />
-
 
     <EditText
         android:id="@+id/Email"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
         android:layout_marginTop="30dp"
         android:background="@drawable/textbox"
         android:ems="10"
@@ -40,8 +71,8 @@
 
     <EditText
         android:id="@+id/Password"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
         android:layout_marginTop="40dp"
         android:background="@drawable/textbox"
         android:ems="10"
@@ -61,27 +92,27 @@
     <Button
         android:id="@+id/LoginBtn"
         android:layout_width="150dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
         android:background="@color/black"
-        android:fontFamily="@font/aclonica"
         android:text="Login"
+        android:textStyle="bold"
         android:textColor="@color/white"
-        android:textSize="13sp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Password" />
 
     <TextView
         android:id="@+id/CreateText"
-        android:layout_width="wrap_content"
+        android:layout_width="180dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:text="@string/signup"
-        android:textColor="@color/blue"
         android:textAlignment="center"
+        android:textColor="@color/blue"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
