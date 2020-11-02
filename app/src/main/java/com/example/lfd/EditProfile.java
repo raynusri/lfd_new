@@ -76,7 +76,6 @@ public void onClick(View V){
                     finish();
                 }
             });
-            Toast.makeText(EditProfile.this,"Email is changed",Toast.LENGTH_SHORT).show();
 
         }
     }).addOnFailureListener(new OnFailureListener() {
